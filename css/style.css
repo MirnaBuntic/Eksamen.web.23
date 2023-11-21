@@ -1,0 +1,63 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+header{
+    grid-area: header;
+}
+
+nav span{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li{
+    padding: 0.5rem;
+}
+
+nav img{
+    margin-top: 1rem;
+    max-width: 135px;
+    max-height: 135px;
+}
+
+#home{
+    text-decoration: underline;
+    text-decoration-color: #e6bd43;
+}
+
+#contact{
+    margin-top: 1rem;
+}
+
+#contact a{
+    background-color: #e6bd43;
+    padding: 1rem;
+}
+
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
