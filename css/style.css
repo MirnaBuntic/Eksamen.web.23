@@ -7,6 +7,10 @@ body{
     grid-template-areas: "header" "main" "footer";
 }
 
+p{
+    line-height: 1.5;
+}
+
 header{
     grid-area: header;
 }
@@ -31,6 +35,7 @@ nav a{
 
 nav ul li{
     padding: 0.5rem;
+    font-size: large;
 }
 
 #logo{
@@ -75,7 +80,7 @@ nav ul li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
 }
 
@@ -84,13 +89,16 @@ nav ul li{
     display: inline-block;
     padding: 1rem;
     text-align: left;
-    padding-right: 5rem;
+    padding-right: 6rem;
+    text-decoration: none;
+    color: black;
 }
 
 .text-overlay p{
-    margin-right: 5rem;
-    margin-left: 5rem;
+    margin-right: 6rem;
+    margin-left: 6rem;
     margin-bottom: 2rem;
+    line-height: 1.5;
 }
 
 
@@ -112,8 +120,8 @@ main{
 }
 
 #text p{
-    margin-right: 4rem;
-    margin-left: 4rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
     padding: 1rem;
 }
 
@@ -122,6 +130,7 @@ main{
     flex-direction: column;
     background-color: #e6bd43;
     margin-top: 3rem;
+    padding-bottom: 5rem;
 }
 
 #flex-company img{
@@ -129,12 +138,11 @@ main{
 }
 
 #flex-company h3{
-   margin-left: 7rem;
+   margin-left: 9rem;
 }
 
 #flex-company p{
-    margin-right: 7rem;
-    margin-left: 7rem;
+    margin: 0 9rem 1.5rem 9rem;
 }
 
 #flex-company a{
@@ -146,11 +154,80 @@ main{
 #read-more b{
     display: inline-block;
     border: 2px solid black;
-    margin-left: 7rem;
-    padding: 0.5rem 5rem 0.5rem 1rem;
+    margin-left: 9rem;
+    padding: 0.5rem 6rem 0.5rem 1rem;
 }
 
+#flex-branding{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#flex-branding h3{
+    margin-top: 3rem;
+}
+
+#flex-branding i{
+    font-size: xx-large;
+    color: black;
+}
+
+#flex-branding h4{
+    font-size: large;
+}
+
+#flex-branding article{
+    margin-top: 2rem;
+}
+
+#user-reg{
+    text-align: center;
+    background-color: rgb(225, 225, 225);
+    padding: 3rem;
+    margin-top: 2rem;
+}
+
+#user-reg h4{
+    font-size: x-large;
+}
+
+#placeholder{
+    border: 0;
+    padding: 1rem;
+}
+
+#button-sign{
+    background-color: #e6bd43;
+    border: 0;
+    padding: 1rem;
+}
 
 footer{
     grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #252525;
+    color: white;
+}
+
+footer span{
+    margin-top: 2rem;
+}
+
+footer p{
+    margin-top: 2rem;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer li{
+    display: inline-block;
+    font-size: xx-large;
+    color: white;
+    padding: 0 1rem 0 1rem;
 }

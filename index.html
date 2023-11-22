@@ -39,17 +39,15 @@
                         <li id="contact"><a href="#"><b>Contact</b></a></li>
                     </ul>
                 </section>
-                <section>
-                    <div class="container">
-                        <img src="img/pc-cactus.jpg" alt="En svartvit bild av en dator och en kaktus.">
-                     <div class="text-overlay">
-                         <h1>Compeling<br>headline</h1>
-                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                         <a href="#"><b>Read more about our<br> services</b></a>
-                     </div>
-                 </div> 
-                </section>
             </nav>
+            <section class="container">
+                    <img src="img/pc-cactus.jpg" alt="En svartvit bild av en dator och en kaktus.">
+                    <article class="text-overlay">
+                        <h1>Compeling<br>headline</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#"><b>Read more about our<br> services</b></a>
+                    </article>
+            </section>
         </header>
         <main>
             <section id="text">
@@ -64,9 +62,51 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum non consectetur a erat nam. Cras tincidunt lobortis feugiat vivamus at augue eget arcu. Arcu dictum varius duis at consectetur lorem donec massa. Scelerisque eu ultrices vitae auctor eu augue ut lectus arcu. Vitae congue mauris rhoncus aenean vel.</p>
                 <a href="about.html" id="read-more"><b>Read more<br>about us</b></a>
             </section>
+
+            <section id="flex-branding">
+                <h3>Our Services</h3>
+                <article>
+                    <i class="fa-solid fa-users"></i>
+                    <h4>Branding</h4>
+                    <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                </article>
+
+                <article>
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <h4>Branding</h4>
+                    <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                </article>
+
+                <article>
+                    <i class="fas fa-code"></i>
+                    <h4>Branding</h4>
+                    <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                </article>
+
+                <article>
+                    <i class="fa-solid fa-wifi"></i>
+                    <h4>Branding</h4>
+                    <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                </article>
+            </section>
+
+            <section>
+                <form id="user-reg" method="post" action="#" autocomplete="on">
+                    <h4>Sign up for our newsletter</h4>
+                    <label for="user-reg-email"></label>
+                    <input id="placeholder" aria-label="Skriv din email för att bli medlem." type="email" name="user-reg-email" id="user-reg-email" placeholder="Nora@epost.no">
+                    <input id="button-sign" aria-label="Tryck för att fullföra registrering." type="submit" value="Sign me up!">
+                 </form>
+            </section>
         </main>
         <footer>
-
+            <span><a href="index.html"><img id="logo" src="img/logo1.png"></a></span>
+            <p>Companyrights Companyname 2023</p>
+            <ul>
+                <li><i class="fa-brands fa-square-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
         </footer>
     </div>
 </body>
