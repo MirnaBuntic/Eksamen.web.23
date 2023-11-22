@@ -20,7 +20,9 @@
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>!</title>
 </head>
@@ -28,7 +30,7 @@
     <div id="grid-container">
         <header>
             <nav>
-                <span><a href="index.html"><img src="img/logo1.png"></a></span>
+                <span><a href="index.html"><img id="logo" src="img/logo1.png"></a></span>
                 <section>
                     <ul>
                         <li id="home"><a href="index.html"><b>Home</b></a></li>
@@ -37,10 +39,31 @@
                         <li id="contact"><a href="#"><b>Contact</b></a></li>
                     </ul>
                 </section>
+                <section>
+                    <div class="container">
+                        <img src="img/pc-cactus.jpg" alt="En svartvit bild av en dator och en kaktus.">
+                     <div class="text-overlay">
+                         <h1>Compeling<br>headline</h1>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                         <a href="#"><b>Read more about our<br> services</b></a>
+                     </div>
+                 </div> 
+                </section>
             </nav>
         </header>
         <main>
+            <section id="text">
+                <h2 id="overtext">Enganging subheading.</h2>
+                <h2 id="undertext">What can you help your <br> visitors with</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor. </p>
+            </section>
 
+            <section id="flex-company">
+                <img src="https://placehold.co/400" alt="Grå placeholder bild">
+                <h3>About Our <br> Company</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum non consectetur a erat nam. Cras tincidunt lobortis feugiat vivamus at augue eget arcu. Arcu dictum varius duis at consectetur lorem donec massa. Scelerisque eu ultrices vitae auctor eu augue ut lectus arcu. Vitae congue mauris rhoncus aenean vel.</p>
+                <a href="about.html" id="read-more"><b>Read more<br>about us</b></a>
+            </section>
         </main>
         <footer>
 
