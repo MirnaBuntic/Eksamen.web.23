@@ -38,7 +38,7 @@ nav ul li{
     font-size: large;
 }
 
-#logo{
+#logotop{
     margin-top: 1rem;
     max-width: 135px;
     max-height: 135px;
@@ -101,6 +101,18 @@ nav ul li{
     line-height: 1.5;
 }
 
+#floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    padding: 20px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #000000; 
+    color: #fff;
+    border: none; 
+    font-size: xx-large;
+}
 
 main{
     grid-area: main;
@@ -228,6 +240,42 @@ footer ul{
 footer li{
     display: inline-block;
     font-size: xx-large;
-    color: white;
     padding: 0 1rem 0 1rem;
+}
+
+footer i{
+    color: white;
+}
+
+/*products*/
+
+#home-p{
+    text-decoration: none;
+}
+
+#prod{
+    text-decoration: underline;
+    text-decoration-color: #e6bd43;
+}
+
+main h2{
+    margin-left: 2rem;
+    font-size: large;
+}
+
+hr{
+    margin: 0 2rem 0 2rem;
+    border: 2px solid #e6bd43;
+}
+
+#explore a{
+    text-decoration: none;
+    color: #000000;
+    margin: 2rem;
+}
+
+
+
+@media only screen and (min-width: 600px){
+
 }

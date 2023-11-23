@@ -28,9 +28,9 @@
 </head>
 <body>
     <div id="grid-container">
-        <header>
+        <header id="top">
             <nav>
-                <span><a href="index.html"><img id="logo" src="img/logo1.png"></a></span>
+                <span><a href="index.html"><img id="logotop" src="img/logo1.png" alt="Grå logga."></a></span>
                 <section>
                     <ul>
                         <li id="home"><a href="index.html"><b>Home</b></a></li>
@@ -50,6 +50,8 @@
             </section>
         </header>
         <main>
+            <a href="#top" id="floating-button"><i class="fa-solid fa-arrow-up"></i></a>
+            
             <section id="text">
                 <h2 id="overtext">Enganging subheading.</h2>
                 <h2 id="undertext">What can you help your <br> visitors with</h2>
@@ -59,7 +61,7 @@
             <section id="flex-company">
                 <img src="https://placehold.co/400" alt="Grå placeholder bild">
                 <h3>About Our <br> Company</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum non consectetur a erat nam. Cras tincidunt lobortis feugiat vivamus at augue eget arcu. Arcu dictum varius duis at consectetur lorem donec massa. Scelerisque eu ultrices vitae auctor eu augue ut lectus arcu. Vitae congue mauris rhoncus aenean vel.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum non consectetur a erat nam. Cras tincidunt lobortis feugiat vivamus at augue eget arcu.</p>
                 <a href="about.html" id="read-more"><b>Read more<br>about us</b></a>
             </section>
 
@@ -93,19 +95,18 @@
             <section>
                 <form id="user-reg" method="post" action="#" autocomplete="on">
                     <h4>Sign up for our newsletter</h4>
-                    <label for="user-reg-email"></label>
-                    <input id="placeholder" aria-label="Skriv din email för att bli medlem." type="email" name="user-reg-email" id="user-reg-email" placeholder="Nora@epost.no">
+                    <input id="placeholder" aria-label="Skriv din email för att bli medlem." type="email" name="user-reg-email" placeholder="Nora@epost.no" required>
                     <input id="button-sign" aria-label="Tryck för att fullföra registrering." type="submit" value="Sign me up!">
                  </form>
             </section>
         </main>
         <footer>
-            <span><a href="index.html"><img id="logo" src="img/logo1.png"></a></span>
+            <span><a href="index.html"><img id="logo" src="img/logo1.png" alt="Grå logga."></a></span>
             <p>Companyrights Companyname 2023</p>
             <ul>
-                <li><i class="fa-brands fa-square-facebook"></i></li>
-                <li><i class="fa-brands fa-instagram"></i></li>
-                <li><i class="fa-brands fa-linkedin"></i></li>
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </footer>
     </div>
