@@ -94,11 +94,14 @@ nav ul li{
     color: black;
 }
 
+.text-overlay h1{
+    margin: 0;
+}
+
 .text-overlay p{
-    margin-right: 6rem;
-    margin-left: 6rem;
     margin-bottom: 2rem;
     line-height: 1.5;
+    padding: 0 2rem 0 2rem;
 }
 
 #floating-button {
@@ -132,9 +135,7 @@ main{
 }
 
 #text p{
-    margin-right: 5rem;
-    margin-left: 5rem;
-    padding: 1rem;
+    padding: 0 2rem 0 2rem;
 }
 
 #flex-company{
@@ -143,31 +144,32 @@ main{
     background-color: #e6bd43;
     margin-top: 3rem;
     padding-bottom: 5rem;
+    padding-top: 2rem;
 }
 
 #flex-company img{
-    padding: 3rem;
+    max-width: 300px;
+    align-self: center;
 }
 
 #flex-company h3{
-   margin-left: 9rem;
+    padding: 0 4rem;
 }
 
 #flex-company p{
-    margin: 0 9rem 1.5rem 9rem;
+    padding: 0 4rem 0 4rem;
 }
 
 #flex-company a{
     text-decoration: none;
     color: black;
-
 }
 
 #read-more b{
     display: inline-block;
     border: 2px solid black;
-    margin-left: 9rem;
     padding: 0.5rem 6rem 0.5rem 1rem;
+    margin-left: 4rem;
 }
 
 #flex-branding{
@@ -206,13 +208,191 @@ main{
 
 #placeholder{
     border: 0;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 #button-sign{
     background-color: #e6bd43;
     border: 0;
+    padding: 1rem 0;
+}
+
+/*products*/
+
+#home-p{
+    text-decoration: none;
+}
+
+#prod{
+    text-decoration: underline;
+    text-decoration-color: #e6bd43;
+}
+
+main h2{
+    font-size: large;
+}
+
+#explore h2{
+    margin-left: 2rem;
+}
+
+hr{
+    margin: 1rem 2rem 1rem 2rem;
+    border: 2px solid #e6bd43;
+    align-self: stretch;
+}
+
+#explore ul{
+    list-style: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+#explore li{
+    margin: 1rem;
+    display: flex;
+}
+
+#explore a{
+    text-decoration: none;
+    color: #000000;
+    padding: 0.8rem;
+    border: 2px solid #000000;
+}
+
+#branding{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#branding h2{
+    align-self: flex-start;
+    margin-left: 2rem;
+    margin-bottom: 0;
+}
+
+#branding article{
+    max-width: 350px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#branding img{
+    max-width: 300px;
+}
+
+#branding h3{
+    margin-bottom: 2.5rem;
+}
+
+#design{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#design h2{
+    align-self: flex-start;
+    margin-left: 2rem;
+    margin-bottom: 0;
+}
+
+#design article{
+    max-width: 350px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#design img{
+    max-width: 300px;
+}
+
+#design h3{
+    margin-bottom: 2.5rem;
+}
+
+#development{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#development h2{
+    align-self: flex-start;
+    margin-left: 2rem;
+    margin-bottom: 0;
+}
+
+#development article{
+    max-width: 350px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#development img{
+    max-width: 300px;
+}
+
+#development h3{
+    margin-bottom: 2.5rem;
+}
+
+/*about*/
+
+#prod-a{
+    text-decoration: none;
+}
+
+#about{
+    text-decoration: underline;
+    text-decoration-color: #e6bd43;
+}
+
+#container-a{
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+#container-a img{
+    width: 100%;
+    max-height: 500px;
+    margin-top: 1rem;
+}
+
+#text-overlay-a {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+#container-a h1{
+    font-size: large;
+}
+
+#container-a a{
+    font-size: small;
+}
+
+#text-overlay-a a{
+    background-color: #e6bd43;
+    display: inline-block;
     padding: 1rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
 }
 
 footer{
@@ -247,32 +427,7 @@ footer i{
     color: white;
 }
 
-/*products*/
 
-#home-p{
-    text-decoration: none;
-}
-
-#prod{
-    text-decoration: underline;
-    text-decoration-color: #e6bd43;
-}
-
-main h2{
-    margin-left: 2rem;
-    font-size: large;
-}
-
-hr{
-    margin: 0 2rem 0 2rem;
-    border: 2px solid #e6bd43;
-}
-
-#explore a{
-    text-decoration: none;
-    color: #000000;
-    margin: 2rem;
-}
 
 
 
