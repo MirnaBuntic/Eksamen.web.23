@@ -273,14 +273,11 @@ hr{
 }
 
 #branding article{
-    max-width: 350px;
+    max-width: 692px;
     min-width: 200px;
     display: flex;
     flex-direction: column;
-}
-
-#branding img{
-    max-width: 300px;
+    flex-grow: 1;
 }
 
 #branding h3{
@@ -300,14 +297,11 @@ hr{
 }
 
 #design article{
-    max-width: 350px;
+    max-width: 692px;
     min-width: 200px;
     display: flex;
     flex-direction: column;
-}
-
-#design img{
-    max-width: 300px;
+    flex-grow: 1;
 }
 
 #design h3{
@@ -327,15 +321,13 @@ hr{
 }
 
 #development article{
-    max-width: 350px;
+    max-width: 692px;
     min-width: 200px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
-#development img{
-    max-width: 300px;
-}
 
 #development h3{
     margin-bottom: 2.5rem;
@@ -364,36 +356,74 @@ hr{
     margin-top: 1rem;
 }
 
-#text-overlay-a {
+#text-overlay-a{
     position: absolute;
     top: 0; 
     left: 0; 
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-left: 10%;
+    margin-top: 4rem;
 }
 
 #container-a h1{
     font-size: large;
+    align-self: flex-start;
+    margin-left: 1rem;
+}
+
+#text-overlay-a p{
+    align-self: flex-start;
+    margin-left: 1rem;
+}
+
+#lorem{
+    margin-right: 1rem;
 }
 
 #container-a a{
-    font-size: small;
+    font-size: medium;
 }
 
 #text-overlay-a a{
     background-color: #e6bd43;
     display: inline-block;
-    padding: 1rem;
-    text-align: left;
+    padding: 1rem 5rem 1rem 1rem;
     text-decoration: none;
     color: black;
+    align-self: flex-start;
+    margin-left: 1rem;
 }
+
+#clients{
+    background-color: #e6bd43;
+    padding: 1rem 0 1rem 0;
+}
+
+#clients ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+}
+
+#clients img{
+    max-width: 135px;
+    padding: 0.5rem;
+}
+
+#clients h4{
+    margin-left: 1.5rem;
+    font-size: large;
+}
+
+
 
 footer{
     grid-area: footer;
