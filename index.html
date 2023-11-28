@@ -4,18 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mirna Buntic">
-    <meta name="description" content="!">
-    <meta name="keywords" content="!">
-
-    <!--Metadata för Facebook och Instagram-->
+    <meta name="description" content="A home page full of inspiration and creativity.">
+    <meta name="keywords" content="Company, Branding, Service, Portfolio">
+    <!--Open graph metadata för Facebook, Instagram och LinkedIn-->
     <meta property="og:title" content="MBshoe">
-    <meta property="og:description" content="Detta är Mbshoes startsida där du shoppa från ett stort utval av sneakers i både damskor, herrskor och barnskor.">
+    <meta property="og:description" content="A home page full of inspiration and creativity.">
     <meta property="og:image" content="http://example.com/image.jpg">
     <meta property="og:url" content="https://itstud.hiof.no/~mirnacb/index.html">
     <meta property="og:type" content="website">
-    <!--Slut-->
-    <!--Metadata för LinkedIn-->
-    
     <!--Slut-->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
@@ -25,14 +21,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>!</title>
+    <link type="image/png" sizes="32x32" rel="icon" href="img/icons8-favorite-32.png">
+    <title>ILOCEAM PLEAM: To Put Your Company's Branding In Focus</title>
 </head>
 <body>
     <div id="grid-container">
         <header id="top1">
             <nav>
-                <span><a href="index.html"><img id="logotop" src="img/logo1.png" alt="Grå och vit logga som säger iloceam pleam"></a></span>
-                <section>
+                <!--Detta är en bild med funktion som gör att man kommer till startsidan om man trycker på den-->
+                <span><a href="index.html"><img id="logotop" src="img/logo1.png" alt="A gray and white logo that says iloceam pleam" aria-label="Go to the home page"></a></span>
+                <section role="menu">
                     <ul>
                         <li id="home"><a href="index.html"><b>Home</b></a></li>
                         <li><a href="products.html">Portfolio</a></li>
@@ -42,9 +40,10 @@
                 </section>
             </nav>
             <section class="container">
-                    <img src="img/pc-cactus.jpg" alt="En svartvit bild av en dator och en kaktus.">
+                <!--Denna video/bild är pynt-->
+                    <img src="img/pc-cactus.jpg" alt="A black and white photo of a computer and a cactus.">
                     <video autoplay muted loop>
-                        <source src="img/mountains.mp4" type="video/mp4">
+                        <source src="img/mountains.mp4" type="video/mp4" alt="A video of people flying parachute">
                     </video>
                     <article class="text-overlay">
                         <h1>Compeling headline</h1>
@@ -54,7 +53,8 @@
             </section>
         </header>
         <main>
-            <a href="#top1" id="floating-button"><i class="fa-solid fa-arrow-up"></i></a>
+            <!--Denna ikon har en funktion att fungera som en knapp-->
+            <a href="#top1" role="button" id="floating-button"><i class="fa-solid fa-arrow-up" aria-label="Go to the top of the page"></i></a>
             
             <section id="text">
                 <h2>Enganging subheading. What can you help your visitors with</h2>
@@ -62,7 +62,8 @@
             </section>
 
             <section id="flex-company">
-                <img src="https://placehold.co/400" alt="Grå placeholder bild">
+                <!--Lite svårt att säga om det är innehåll eller pynt eftersom jag inte vet vad bilden ska visa eller vad texten säger, men jag tänker att det är innehåll i detta kontext-->
+                <img src="https://placehold.co/400" alt="Gray placeholder picture 400x400px">
                 <div class="company-text">
                 <h3>About Our Company</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum non consectetur a erat nam. Cras tincidunt lobortis feugiat vivamus at augue eget arcu.</p>
@@ -70,8 +71,10 @@
                 </div>
             </section>
 
+
             <section id="flex-branding">
                 <h3>Our Services</h3>
+                <!--Ikonerna är pynt-->
                 <div class="branding">
                     <article class="brand-icon">
                         <i class="fa-solid fa-users"></i>
@@ -102,18 +105,19 @@
             <section>
                 <form id="user-reg" method="post" action="#" autocomplete="on">
                     <h4>Sign up for our newsletter</h4>
-                    <input id="placeholder" aria-label="Skriv din email för att bli medlem." type="email" name="user-reg-email" placeholder="Nora@epost.no" required>
-                    <input id="button-sign" aria-label="Tryck för att fullföra registrering." type="submit" value="Sign me up!">
+                    <input id="placeholder" aria-label="Enter your email to become a member" type="email" name="user-reg-email" placeholder="Nora@epost.no" required>
+                    <input id="button-sign" aria-label="Press to complete registration" type="submit" value="Sign me up!">
                  </form>
             </section>
         </main>
         <footer>
-            <span><a href="index.html"><img id="logo" src="img/logo1.png" alt="Grå och vit logga som säger iloceam pleam"></a></span>
+            <!--Bilden är innehåll-->
+            <span><a href="index.html"><img id="logo" src="img/logo1.png" alt="A gray and white logo that says iloceam pleam" aria-label="Go to the home page"></a></span>
             <p>Companyrights Companyname 2023</p>
             <ul>
-                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook" aria-label="Go to our Facebook page"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" aria-label="Go to our Instagram page"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin" aria-label="Go to our Linkedin page"></i></a></li>
             </ul>
         </footer>
     </div>

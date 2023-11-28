@@ -4,32 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mirna Buntic">
-    <meta name="description" content="!">
-    <meta name="keywords" content="!">
-    <!--Metadata för Facebook och Instagram-->
+    <meta name="description" content="A contact page that enables a strong bond with our customers.">
+    <meta name="keywords" content="Company, Contact, Branding, Portfolio">
+    <!--Open graph metadata för Facebook, Instagram och LinkedIn-->
     <meta property="og:title" content="MBshoe">
-    <meta property="og:description" content="Detta är Mbshoes startsida där du shoppa från ett stort utval av sneakers i både damskor, herrskor och barnskor.">
+    <meta property="og:description" content="A contact page that enables a strong bond with our customers.">
     <meta property="og:image" content="http://example.com/image.jpg">
     <meta property="og:url" content="https://itstud.hiof.no/~mirnacb/index.html">
     <meta property="og:type" content="website">
-    <!--Slut-->
-    <!--Metadata för LinkedIn-->
-    
     <!--Slut-->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>!</title>
+    <link type="image/png" sizes="32x32" rel="icon" href="img/icons8-favorite-32.png">
+    <title>ILOCEAM PLEAM: Contact Us To Make Your Company A Success</title>
 </head>
 <body>
     <div id="grid-container">
         <header id="top3">
             <nav>
-                <span><a href="index.html"><img id="logotop" src="img/logo1.png" alt="Grå och vit logga som säger iloceam pleam"></a></span>
+                <!--Detta är en bild med funktion som gör att man kommer till startsidan om man trycker på den-->
+                <span><a href="index.html"><img id="logotop" src="img/logo1.png" alt="A gray and white logo that says iloceam pleam" aria-label="Go to the home page"></a></span>
                 <section>
-                    <ul>
+                    <ul role="menu">
                         <li id="home-p"><a href="index.html">Home</a></li>
                         <li id="prod-a"><a href="products.html">Portfolio</a></li>
                         <li id="about"><a href="about.html"><b>About</b></a></li>
@@ -38,8 +37,9 @@
                 </section>
             </nav>
             <section id="container-a">
-                <img id="cactus" src="img/pc-cactus.jpg" alt="En svartvit bild av en dator och en kaktus.">
-                <img id="cactus2" src="img/pc-cactus-kopia.jpg" alt="En svartvit bild av en dator och en kaktus.">
+                 <!--Bilderna är pynt-->
+                <img id="cactus" src="img/pc-cactus.jpg" alt="A black and white photo of a computer and a cactus.">
+                <img id="cactus2" src="img/pc-cactus-kopia.jpg" alt="A black and white photo of a computer and a cactus.">
                 <article id="text-overlay-a">
                     <div class="overlay-text">
                         <p>Company name</p>
@@ -51,7 +51,9 @@
         </section>
         </header>
         <main>
+             <!--Denna ikon har en funktion att fungera som en knapp-->
             <a href="#top3" id="floating-button"><i class="fa-solid fa-arrow-up"></i></a>
+            <!--Ikonerna är pynt-->
             <section id="flex-branding">
                 <h3>Our Services</h3>
                 <div class="branding">
@@ -83,10 +85,11 @@
 
             <section id="clients">
                 <h4>Some of our clients</h4>
+                <!--Detta är innehåll eftersom det visar vilka klienter sidan sammarbetar med-->
                 <ul>
-                    <li><img src="img/logo1.png" alt="Grå och vit logga som säger iloceam pleam"></li>
-                    <li><img src="img/logo2.png" alt="Grå och vit logga med fyra trianglar"></li>
-                    <li><img src="img/logo3.png" alt="Grå och vit logga som säger Aca"></li>
+                    <li><img src="img/logo1.png" alt="Gray and white logo that says iloceam pleam"></li>
+                    <li><img src="img/logo2.png" alt="Gray and white logo with four triangles"></li>
+                    <li><img src="img/logo3.png" alt="Gray and white logo that says Aca"></li>
                 </ul>
             </section>
 
@@ -98,13 +101,13 @@
                             <h4>Send us a message</h4>
     
                             <label for="name">Name</label>
-                            <input type="text" name="name" placeholder="Ola Nordmann.." id="name" required>
+                            <input type="text" name="name" placeholder="Ola Nordmann.." aria-label="Enter your name" id="name" required>
     
                             <label for="subject">Subject</label>
-                            <input type="text" name="subject" placeholder="Branding.." id="subject" required>
+                            <input type="text" name="subject" placeholder="Branding.." aria-label="Enter a subject of your choice" id="subject" required>
     
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="7" required></textarea>
+                            <textarea id="message" name="message" rows="7" aria-label="Write a message here" required></textarea>
     
                             <input type="submit" value="Send message" id="submit">
                         </form>
@@ -113,10 +116,11 @@
                     <article id="con-info">
                         <h4>Contact information</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet purus gravida quis blandit. Sollicitudin ac orci phasellus egestas.</p>
+                        <!--Ikonerna har en funktion att visa vad informationen efter är. För exempel en telefon som viasr att nummret som kommer efter är ett telefonnr och inte bara några random siffror-->
                         <ul>
-                            <li><i class="fa-solid fa-location-pin"></i>B R A Veien 4, 1757 Halden</li>
-                            <li><i class="fa-solid fa-phone"></i>69 60 80 00</li>
-                            <li><i class="fa-solid fa-envelope"></i><a href="#">postmottak@hiof.no</a></li>
+                            <li><i class="fa-solid fa-location-pin" aria-label="Address"></i>B R A Veien 4, 1757 Halden</li>
+                            <li><i class="fa-solid fa-phone" aria-label="Phonenumber"></i>69 60 80 00</li>
+                            <li><i class="fa-solid fa-envelope" aria-label="Email address"></i><a href="#">postmottak@hiof.no</a></li>
                         </ul>
                     </article>
                 </div>
@@ -124,17 +128,18 @@
 
             <section>
                 <article>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.210573847431!2d11.349786677099187!3d59.128877174517875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0x4495a486ebe83bb4!2sB%20R%20A%20Veien%204%2C%201757%2C%201783%20Halden!5e0!3m2!1ssv!2sno!4v1701094612516!5m2!1ssv!2sno" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.210573847431!2d11.349786677099187!3d59.128877174517875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0x4495a486ebe83bb4!2sB%20R%20A%20Veien%204%2C%201757%2C%201783%20Halden!5e0!3m2!1ssv!2sno!4v1701094612516!5m2!1ssv!2sno" ara-label="Map showing the address B R A Veien 4, 1757 Halden" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </article>
             </section>
         </main>
         <footer>
-            <span><a href="index.html"><img id="logo" src="img/logo1.png" alt="Grå och vit logga som säger iloceam pleam"></a></span>
+            <!--Bilden är innehåll-->
+            <span><a href="index.html"><img id="logo" src="img/logo1.png" alt="A gray and white logo that says iloceam pleam" aria-label="Go to the home page"></a></span>
             <p>Companyrights Companyname 2023</p>
             <ul>
-                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook" aria-label="Go to our Facebook page"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" aria-label="Go to our Instagram page"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin" aria-label="Go to our Linkedin page"></i></a></li>
             </ul>
         </footer>
     </div>
