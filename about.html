@@ -29,10 +29,10 @@
                 <span><a href="index.html"><img id="logotop" src="img/logo1.png" alt="A gray and white logo that says iloceam pleam" aria-label="Go to the home page"></a></span>
                 <section>
                     <ul role="menu">
-                        <li id="home-p"><a href="index.html">Home</a></li>
-                        <li id="prod-a"><a href="products.html">Portfolio</a></li>
-                        <li id="about"><a href="about.html"><b>About</b></a></li>
-                        <li id="contact"><a href="#contact-us"><b>Contact</b></a></li>
+                        <li role="menuitem" id="home-p"><a href="index.html">Home</a></li>
+                        <li role="menuitem" id="prod-a"><a href="products.html">Portfolio</a></li>
+                        <li role="menuitem" aria-current="page" id="about"><a href="about.html"><b>About</b></a></li>
+                        <li role="menuitem" id="contact"><a href="#contact-us"><b>Contact</b></a></li>
                     </ul>
                 </section>
             </nav>
@@ -52,7 +52,7 @@
         </header>
         <main>
              <!--Denna ikon har en funktion att fungera som en knapp-->
-            <a href="#top3" id="floating-button"><i class="fa-solid fa-arrow-up"></i></a>
+            <a href="#top3" role="button" id="floating-button" aria-label="Go to the top of the page"><i class="fa-solid fa-arrow-up"></i></a>
             <!--Ikonerna är pynt-->
             <section id="flex-branding">
                 <h3>Our Services</h3>
@@ -128,7 +128,7 @@
 
             <section>
                 <article>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.210573847431!2d11.349786677099187!3d59.128877174517875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0x4495a486ebe83bb4!2sB%20R%20A%20Veien%204%2C%201757%2C%201783%20Halden!5e0!3m2!1ssv!2sno!4v1701094612516!5m2!1ssv!2sno" ara-label="Map showing the address B R A Veien 4, 1757 Halden" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.210573847431!2d11.349786677099187!3d59.128877174517875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0x4495a486ebe83bb4!2sB%20R%20A%20Veien%204%2C%201757%2C%201783%20Halden!5e0!3m2!1ssv!2sno!4v1701094612516!5m2!1ssv!2sno" aria-label="Map showing the address B R A Veien 4, 1757 Halden" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </article>
             </section>
         </main>
