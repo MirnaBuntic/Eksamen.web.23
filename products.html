@@ -29,19 +29,19 @@
                 <span><a href="index.html"><img id="logotop" src="img/logo1.png" alt="A gray and white logo that says iloceam pleam" aria-label="Go to the home page"></a></span>
                 <section role="menu">
                     <ul>
-                        <li role="menuitem" id="home-p"><a href="index.html">Home</a></li>
-                        <li role="menuitem" aria-current="page" id="prod"><a href="products.html"><b>Portfolio</b></a></li>
-                        <li role="menuitem"><a href="about.html">About</a></li>
-                        <li role="menuitem" id="contact"><a href="about.html#contact-us"><b>Contact</b></a></li>
+                        <li role="menuitem" id="home-p"><a href="index.html" aria-label="Go to the home page">Home</a></li>
+                        <li role="menuitem" id="prod"><a href="products.html" aria-current="page" aria-label="Veiw our Portfolio"><b>Portfolio</b></a></li>
+                        <li role="menuitem"><a href="about.html" aria-label="Get more information about us">About</a></li>
+                        <li role="menuitem" id="contact"><a href="about.html#contact-us" aria-label="Contact us through the about page"><b>Contact</b></a></li>
                     </ul>
                 </section>
             </nav>
             <section class="container-startp">
                 <!--Bilderna är pynt-->
-                    <img id="cactus" src="img/pc-cactus.jpg" alt="A black and white photo of a computer and a cactus.">
-                    <img id="cactus2" src="img/pc-cactus-kopia.jpg" alt="A black and white photo of a computer and a cactus.">
+                    <img id="cactus" src="img/pc-cactus.jpg" alt="A black and white photo of a computer and a cactus." aria-hidden="true">
+                    <img id="cactus2" src="img/pc-cactus-inzoomad.jpg" alt="A black and white photo of a computer and a cactus." aria-hidden="true">
                     <article class="text-overlay">
-                        <h1>Portfolio</h1>
+                        <h1 tabindex="1">Portfolio</h1>
                     </article>
             </section>
         </header>
@@ -49,11 +49,11 @@
             <!--Alla bilder i main är innehåll-->
             
             <!--Denna ikon har en funktion att fungera som en knapp-->
-            <a href="#top2" role="button" id="floating-button" aria-label="Go to the top of the page"><i class="fa-solid fa-arrow-up" ></i></a>
+            <a href="#top2" role="button" id="floating-button" aria-label="Go to the top of the page" accesskey="t"><i class="fa-solid fa-arrow-up" ></i></a>
 
             <article id="explore">
-                <h2>Explore previous jobs</h2>
-                <hr>
+                <h2 tabindex="1">Explore previous jobs</h2>
+                <hr aria-hidden="true">
                 <ul role="navigation">
                     <li><a href="#branding">Branding</a></li>
                     <li><a href="#design">Design</a></li>
@@ -61,58 +61,58 @@
                 </ul>
             </article>
             <section id="branding">
-                <h2>Branding</h2>
-                <hr>
+                <h2 tabindex="1">Branding</h2>
+                <hr aria-hidden="true">
                 <div class="container-prod">
                     <article class="box">
-                        <img src="https://placehold.co/400" alt="Gray placeholder picture 400x400px">
-                        <h3>Et harum quidem</h3>
+                        <img tabindex="1" src="https://placehold.co/400" alt="Gray placeholder picture 400x400px">
+                        <h3 tabindex="2">Et harum quidem</h3>
                     </article>
                     <article class="box">
-                        <img src="https://placehold.co/400" alt="Gray placeholder picture 400x400px">
-                        <h3>Et harum quidem</h3>
+                        <img tabindex="3" src="https://placehold.co/400" alt="Gray placeholder picture 400x400px">
+                        <h3 tabindex="4">Et harum quidem</h3>
                     </article>
                     <article class="box">
-                        <img src="https://placehold.co/400" alt="Gray placeholder picture 400x400px">
-                        <h3>Et harum quidem</h3>
+                        <img tabindex="5" src="https://placehold.co/400" alt="Gray placeholder picture 400x400px">
+                        <h3 tabindex="6">Et harum quidem</h3>
                     </article>
                     <article class="box">
-                        <img src="https://placehold.co/400" alt="Gray placeholder picture 400x400px">
-                        <h3>Et harum quidem</h3>
+                        <img tabindex="7" src="https://placehold.co/400" alt="Gray placeholder picture 400x400px">
+                        <h3 tabindex="8">Et harum quidem</h3>
                     </article>
                 </div>
             </section>
 
             <section id="design">
-                <h2>Design</h2>
-                <hr>
+                <h2 tabindex="1">Design</h2>
+                <hr aria-hidden="true">
                 <div class="container-prod">
                     <article class="box">
-                        <img src="https://placehold.co/400" alt="Gray placeholder picture 400x400px">
-                        <h3>Et harum quidem</h3>
+                        <img tabindex="1" src="https://placehold.co/400" alt="Gray placeholder picture 400x400px">
+                        <h3 tabindex="2">Et harum quidem</h3>
                     </article>
                     <article class="box">
-                        <img src="https://placehold.co/400" alt="Gray placeholder picture 400x400px">
-                        <h3>Et harum quidem</h3>
+                        <img tabindex="3" src="https://placehold.co/400" alt="Gray placeholder picture 400x400px">
+                        <h3 tabindex="4">Et harum quidem</h3>
                     </article>
                     <article class="box">
-                        <img src="https://placehold.co/400" alt="Gray placeholder picture 400x400px">
-                        <h3>Et harum quidem</h3>
+                        <img tabindex="5" src="https://placehold.co/400" alt="Gray placeholder picture 400x400px">
+                        <h3 tabindex="6">Et harum quidem</h3>
                     </article>
                 </div>
             </section>
 
             <section id="development">
-                <h2>Development</h2>
-                <hr>
+                <h2 tabindex="1">Development</h2>
+                <hr aria-hidden="true">
                 <div class="container-prod">
                     <article class="box">
-                        <img src="https://placehold.co/400" alt="Gray placeholder picture 400x400px">
-                        <h3>Et harum quidem</h3>
+                        <img tabindex="1" src="https://placehold.co/400" alt="Gray placeholder picture 400x400px">
+                        <h3 tabindex="2">Et harum quidem</h3>
                     </article>
                     <article class="box">
-                        <img src="https://placehold.co/400" alt="Gray placeholder picture 400x400px">
-                        <h3>Et harum quidem</h3>
+                        <img tabindex="3" src="https://placehold.co/400" alt="Gray placeholder picture 400x400px">
+                        <h3 tabindex="4">Et harum quidem</h3>
                     </article>
                 </div>
             </section>
@@ -122,9 +122,9 @@
             <span><a href="index.html"><img id="logo" src="img/logo1.png" alt="A gray and white logo that says iloceam pleam" aria-label="Go to the home page"></a></span>
             <p>Companyrights Companyname 2023</p>
             <ul>
-                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook" aria-label="Go to our Facebook page"></i></a></li>
-                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" aria-label="Go to our Instagram page"></i></a></li>
-                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin" aria-label="Go to our Linkedin page"></i></a></li>
+                <li><a href="https://www.facebook.com/" aria-label="Go to our Facebook page"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/" aria-label="Go to our Instagram page"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/" aria-label="Go to our Linkedin page"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </footer>
     </div>

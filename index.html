@@ -30,83 +30,83 @@
             <nav>
                 <!--Detta är en bild med funktion som gör att man kommer till startsidan om man trycker på den-->
                 <span><a href="index.html"><img id="logotop" src="img/logo1.png" alt="A gray and white logo that says iloceam pleam" aria-label="Go to the home page"></a></span>
-                <section role="menu">
-                    <ul>
-                        <li role="menuitem" aria-current="page" id="home"><a href="index.html"><b>Home</b></a></li>
-                        <li role="menuitem"><a href="products.html">Portfolio</a></li>
-                        <li role="menuitem"><a href="about.html">About</a></li>
-                        <li role="menuitem" id="contact"><a href="about.html#contact-us"><b>Contact</b></a></li>
+                <section>
+                    <ul role="menu">
+                        <li role="menuitem" id="home"><a href="index.html" aria-current="page" aria-label="Go to the home page"><b>Home</b></a></li>
+                        <li role="menuitem"><a href="products.html" aria-label="Veiw our Portfolio">Portfolio</a></li>
+                        <li role="menuitem"><a href="about.html" aria-label="Get more information about us">About</a></li>
+                        <li role="menuitem" id="contact"><a href="about.html#contact-us" aria-label="Contact us through the about page"><b>Contact</b></a></li>
                     </ul>
                 </section>
             </nav>
             <section class="container">
                 <!--Denna video/bild är pynt-->
-                    <img src="img/pc-cactus.jpg" alt="A black and white photo of a computer and a cactus.">
-                    <video autoplay muted loop>
-                        <source src="img/mountains.mp4" type="video/mp4" alt="A video of people flying parachute">
+                    <img src="img/pc-cactus.jpg" alt="" aria-hidden="true">
+                    <video aria-hidden="true" autoplay muted loop>
+                        <source src="img/mountains.mp4" type="video/mp4" alt="">
                     </video>
                     <article class="text-overlay">
-                        <h1>Compeling headline</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <a href="#flex-branding"><b>Read more about our services</b></a>
+                        <h1 tabindex="1">Compeling headline</h1>
+                        <p tabindex="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a tabindex="3" href="#flex-branding"><b>Read more about our services</b></a>
                     </article>
             </section>
         </header>
         <main>
             <!--Denna ikon har en funktion att fungera som en knapp-->
-            <a href="#top1" role="button" id="floating-button" aria-label="Go to the top of the page"><i class="fa-solid fa-arrow-up"></i></a>
+            <a href="#top1" role="button" id="floating-button" aria-label="Go to the top of the page" accesskey="t"><i class="fa-solid fa-arrow-up"></i></a>
             
             <section id="text">
-                <h2>Enganging subheading. What can you help your visitors with</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor. </p>
+                <h2 tabindex="1">Enganging subheading. What can you help your visitors with</h2>
+                <p tabindex="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor. </p>
             </section>
 
             <section id="flex-company">
                 <!--Lite svårt att säga om det är innehåll eller pynt eftersom jag inte vet vad bilden ska visa eller vad texten säger, men jag tänker att det är innehåll i detta kontext-->
-                <img src="https://placehold.co/400" alt="Gray placeholder picture 400x400px">
+                <img src="https://placehold.co/400" alt="Gray placeholder picture 400x400px" >
                 <div class="company-text">
-                <h3>About Our Company</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum non consectetur a erat nam. Cras tincidunt lobortis feugiat vivamus at augue eget arcu.</p>
-                <a href="about.html" id="read-more"><b>Read more about us</b></a>
+                <h3 tabindex="1">About Our Company</h3>
+                <p tabindex="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum non consectetur a erat nam. Cras tincidunt lobortis feugiat vivamus at augue eget arcu.</p>
+                <a tabindex="3" href="about.html" id="read-more"><b>Read more about us</b></a>
                 </div>
             </section>
 
 
             <section id="flex-branding">
-                <h3>Our Services</h3>
+                <h3 tabindex="1">Our Services</h3>
                 <!--Ikonerna är pynt-->
                 <div class="branding">
                     <article class="brand-icon">
-                        <i class="fa-solid fa-users"></i>
-                        <h4>Branding</h4>
-                        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                        <i aria-hidden="true" class="fa-solid fa-users"></i>
+                        <h4 tabindex="2">Branding</h4>
+                        <p tabindex="3">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
                     </article>
     
                     <article class="brand-icon">
-                        <i class="fa-solid fa-cloud-arrow-up"></i>
-                        <h4>Branding</h4>
-                        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                        <i aria-hidden="true" class="fa-solid fa-cloud-arrow-up"></i>
+                        <h4 tabindex="4">Branding</h4>
+                        <p tabindex="5">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
                     </article>
     
                     <article class="brand-icon">
-                        <i class="fas fa-code"></i>
-                        <h4>Branding</h4>
-                        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                        <i aria-hidden="true" class="fas fa-code"></i>
+                        <h4 tabindex="6">Branding</h4>
+                        <p tabindex="7">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
                     </article>
     
                     <article class="brand-icon">
-                        <i class="fa-solid fa-wifi"></i>
-                        <h4>Branding</h4>
-                        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                        <i aria-hidden="true" class="fa-solid fa-wifi"></i>
+                        <h4 tabindex="8">Branding</h4>
+                        <p tabindex="9">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
                     </article>
                 </div>
             </section>
 
             <section>
-                <form id="user-reg" method="post" action="#" autocomplete="on">
-                    <h4>Sign up for our newsletter</h4>
-                    <input id="placeholder" aria-label="Enter your email to become a member" type="email" name="user-reg-email" placeholder="Nora@epost.no" required>
-                    <input id="button-sign" aria-label="Press to complete registration" type="submit" value="Sign me up!">
+                <form id="user-reg" method="post" action="#" autocomplete="on" aria-label="Newsletter signup form">
+                    <h4 tabindex="1">Sign up for our newsletter</h4>
+                    <input tabindex="2" id="placeholder" aria-label="Enter your email to signup for newsletter" type="email" name="user-reg-email" placeholder="Nora@epost.no" required>
+                    <input tabindex="3" id="button-sign" aria-label="Press to complete registration" type="submit" value="Sign me up!">
                  </form>
             </section>
         </main>
@@ -115,9 +115,9 @@
             <span><a href="index.html"><img id="logo" src="img/logo1.png" alt="A gray and white logo that says iloceam pleam" aria-label="Go to the home page"></a></span>
             <p>Companyrights Companyname 2023</p>
             <ul>
-                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook" aria-label="Go to our Facebook page"></i></a></li>
-                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" aria-label="Go to our Instagram page"></i></a></li>
-                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin" aria-label="Go to our Linkedin page"></i></a></li>
+                <li><a href="https://www.facebook.com/" aria-label="Go to our Facebook page"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/" aria-label="Go to our Instagram page"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/" aria-label="Go to our Linkedin page"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </footer>
     </div>

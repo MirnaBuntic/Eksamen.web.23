@@ -29,62 +29,62 @@
                 <span><a href="index.html"><img id="logotop" src="img/logo1.png" alt="A gray and white logo that says iloceam pleam" aria-label="Go to the home page"></a></span>
                 <section>
                     <ul role="menu">
-                        <li role="menuitem" id="home-p"><a href="index.html">Home</a></li>
-                        <li role="menuitem" id="prod-a"><a href="products.html">Portfolio</a></li>
-                        <li role="menuitem" aria-current="page" id="about"><a href="about.html"><b>About</b></a></li>
-                        <li role="menuitem" id="contact"><a href="#contact-us"><b>Contact</b></a></li>
+                        <li role="menuitem" id="home-p"><a href="index.html" aria-label="Go to the home page">Home</a></li>
+                        <li role="menuitem" id="prod-a"><a href="products.html" aria-label="Veiw our Portfolio">Portfolio</a></li>
+                        <li role="menuitem" id="about"><a href="about.html" aria-current="page" aria-label="Get more information about us"><b>About</b></a></li>
+                        <li role="menuitem" id="contact"><a href="#contact-us" aria-label="Contact us through the about page"><b>Contact</b></a></li>
                     </ul>
                 </section>
             </nav>
             <section id="container-a">
                  <!--Bilderna är pynt-->
-                <img id="cactus" src="img/pc-cactus.jpg" alt="A black and white photo of a computer and a cactus.">
-                <img id="cactus2" src="img/pc-cactus-kopia.jpg" alt="A black and white photo of a computer and a cactus.">
+                <img id="cactus" src="img/pc-cactus.jpg" alt="A black and white photo of a computer and a cactus." aria-hidden="true">
+                <img id="cactus2" src="img/pc-cactus-inzoomad.jpg" alt="A black and white photo of a computer and a cactus." aria-hidden="true">
                 <article id="text-overlay-a">
                     <div class="overlay-text">
-                        <p>Company name</p>
-                        <h1>About Our Company</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet purus gravida quis blandit. Sollicitudin ac orci phasellus egestas.</p>
-                        <a href="#contact-us"><b>Get in touch with us</b></a>
+                        <p tabindex="1">Company name</p>
+                        <h1 tabindex="2">About Our Company</h1>
+                        <p tabindex="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet purus gravida quis blandit. Sollicitudin ac orci phasellus egestas.</p>
+                        <a tabindex="4" href="#contact-us"><b>Get in touch with us</b></a>
                     </div>
                 </article>
         </section>
         </header>
         <main>
              <!--Denna ikon har en funktion att fungera som en knapp-->
-            <a href="#top3" role="button" id="floating-button" aria-label="Go to the top of the page"><i class="fa-solid fa-arrow-up"></i></a>
+            <a href="#top3" role="button" id="floating-button" aria-label="Go to the top of the page" accesskey="t"><i class="fa-solid fa-arrow-up"></i></a>
             <!--Ikonerna är pynt-->
             <section id="flex-branding">
-                <h3>Our Services</h3>
+                <h3 tabindex="1">Our Services</h3>
                 <div class="branding">
                     <article class="brand-icon">
-                        <i class="fa-solid fa-users"></i>
-                        <h4>Branding</h4>
-                        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                        <i aria-hidden="true" class="fa-solid fa-users"></i>
+                        <h4 tabindex="1">Branding</h4>
+                        <p tabindex="2">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
                     </article>
     
                     <article class="brand-icon">
-                        <i class="fa-solid fa-cloud-arrow-up"></i>
-                        <h4>Branding</h4>
-                        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                        <i aria-hidden="true" class="fa-solid fa-cloud-arrow-up"></i>
+                        <h4 tabindex="3">Branding</h4>
+                        <p tabindex="4">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
                     </article>
     
                     <article class="brand-icon">
-                        <i class="fas fa-code"></i>
-                        <h4>Branding</h4>
-                        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                        <i aria-hidden="true" class="fas fa-code"></i>
+                        <h4 tabindex="5">Branding</h4>
+                        <p tabindex="6">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
                     </article>
     
                     <article class="brand-icon">
-                        <i class="fa-solid fa-wifi"></i>
-                        <h4>Branding</h4>
-                        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                        <i aria-hidden="true" class="fa-solid fa-wifi"></i>
+                        <h4 tabindex="7">Branding</h4>
+                        <p tabindex="8">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
                     </article>
                 </div>
             </section>
 
             <section id="clients">
-                <h4>Some of our clients</h4>
+                <h4 tabindex="1">Some of our clients</h4>
                 <!--Detta är innehåll eftersom det visar vilka klienter sidan sammarbetar med-->
                 <ul>
                     <li><img src="img/logo1.png" alt="Gray and white logo that says iloceam pleam"></li>
@@ -94,33 +94,33 @@
             </section>
 
             <section id="contact-us">
-                <h3>Contact us</h3>
+                <h3 tabindex="1">Contact us</h3>
                 <div class="flex-contact">
                     <article id="scheme">
-                        <form method="post" action="#" autocomplete="on">
-                            <h4>Send us a message</h4>
+                        <form method="post" action="#" autocomplete="on" aria-label="Send-message form">
+                            <h4 tabindex="1">Send us a message</h4>
     
-                            <label for="name">Name</label>
-                            <input type="text" name="name" placeholder="Ola Nordmann.." aria-label="Enter your name" id="name" required>
+                            <label tabindex="2" for="name">Name</label>
+                            <input tabindex="3" type="text" name="name" placeholder="Ola Nordmann.." aria-label="Enter your name" id="name" required>
     
-                            <label for="subject">Subject</label>
-                            <input type="text" name="subject" placeholder="Branding.." aria-label="Enter a subject of your choice" id="subject" required>
+                            <label tabindex="4" for="subject">Subject</label>
+                            <input tabindex="5" type="text" name="subject" placeholder="Branding.." aria-label="Enter a subject of your choice" id="subject" required>
     
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="7" aria-label="Write a message here" required></textarea>
+                            <label tabindex="5" for="message">Message</label>
+                            <textarea tabindex="6" id="message" name="message" rows="7" aria-label="Write a message here" required></textarea>
     
-                            <input type="submit" value="Send message" id="submit">
+                            <input tabindex="7" type="submit" value="Send message" id="submit">
                         </form>
                     </article>
     
                     <article id="con-info">
-                        <h4>Contact information</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet purus gravida quis blandit. Sollicitudin ac orci phasellus egestas.</p>
+                        <h4 tabindex="1">Contact information</h4>
+                        <p tabindex="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet purus gravida quis blandit. Sollicitudin ac orci phasellus egestas.</p>
                         <!--Ikonerna har en funktion att visa vad informationen efter är. För exempel en telefon som viasr att nummret som kommer efter är ett telefonnr och inte bara några random siffror-->
                         <ul>
-                            <li><i class="fa-solid fa-location-pin" aria-label="Address"></i>B R A Veien 4, 1757 Halden</li>
-                            <li><i class="fa-solid fa-phone" aria-label="Phonenumber"></i>69 60 80 00</li>
-                            <li><i class="fa-solid fa-envelope" aria-label="Email address"></i><a href="#">postmottak@hiof.no</a></li>
+                            <li tabindex="1"><i class="fa-solid fa-location-pin" aria-label="Address"></i>B R A Veien 4, 1757 Halden</li>
+                            <li tabindex="2"><i class="fa-solid fa-phone" aria-label="Phonenumber"></i>69 60 80 00</li>
+                            <li tabindex="3"><i class="fa-solid fa-envelope" aria-label="Email address"></i><a href="#">postmottak@hiof.no</a></li>
                         </ul>
                     </article>
                 </div>
@@ -137,9 +137,9 @@
             <span><a href="index.html"><img id="logo" src="img/logo1.png" alt="A gray and white logo that says iloceam pleam" aria-label="Go to the home page"></a></span>
             <p>Companyrights Companyname 2023</p>
             <ul>
-                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook" aria-label="Go to our Facebook page"></i></a></li>
-                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" aria-label="Go to our Instagram page"></i></a></li>
-                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin" aria-label="Go to our Linkedin page"></i></a></li>
+                <li><a href="https://www.facebook.com/" aria-label="Go to our Facebook page"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/" aria-label="Go to our Instagram page"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/" aria-label="Go to our Linkedin page"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </footer>
     </div>
