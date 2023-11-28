@@ -51,7 +51,7 @@ header nav ul li{
 }
 
 #home{
-    text-decoration: underline;
+    text-decoration: 3px underline;
     text-decoration-color: #e6bd43;
 }
 
@@ -237,7 +237,7 @@ main{
 }
 
 #prod{
-    text-decoration: underline;
+    text-decoration: 3px underline;
     text-decoration-color: #e6bd43;
 }
 
@@ -342,7 +342,7 @@ article h3{
 }
 
 #about{
-    text-decoration: underline;
+    text-decoration: 3px underline;
     text-decoration-color: #e6bd43;
 }
 
@@ -672,7 +672,7 @@ footer i{
     }
 
     #text-overlay-a p {
-        margin: 2rem 0;
+        margin: 2rem 2rem 2rem 0;
     }
 
     .overlay-text{
@@ -689,7 +689,7 @@ footer i{
     }
 
     #branding article{
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.8s ease-in-out;
     }
     
     #branding article:hover{
@@ -697,7 +697,7 @@ footer i{
     }
 
     #design article{
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.8s ease-in-out;
     }
     
     #design article:hover{
@@ -705,7 +705,7 @@ footer i{
     }
 
     #development article{
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.8s ease-in-out;
     }
     
     #development article:hover{
