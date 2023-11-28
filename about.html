@@ -25,7 +25,7 @@
 </head>
 <body>
     <div id="grid-container">
-        <header>
+        <header id="top3">
             <nav>
                 <span><a href="index.html"><img id="logotop" src="img/logo1.png" alt="Grå och vit logga som säger iloceam pleam"></a></span>
                 <section>
@@ -33,46 +33,52 @@
                         <li id="home-p"><a href="index.html">Home</a></li>
                         <li id="prod-a"><a href="products.html">Portfolio</a></li>
                         <li id="about"><a href="about.html"><b>About</b></a></li>
-                        <li id="contact"><a href="#"><b>Contact</b></a></li>
+                        <li id="contact"><a href="#contact-us"><b>Contact</b></a></li>
                     </ul>
                 </section>
             </nav>
             <section id="container-a">
-                <img src="img/pc-cactus.jpg" alt="En svartvit bild av en dator och en kaktus.">
+                <img id="cactus" src="img/pc-cactus.jpg" alt="En svartvit bild av en dator och en kaktus.">
+                <img id="cactus2" src="img/pc-cactus - kopia.jpg" alt="En svartvit bild av en dator och en kaktus.">
                 <article id="text-overlay-a">
-                    <p>Company name</p>
-                    <h1>About Our <br>Company</h1>
-                    <p id="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet purus gravida quis blandit. Sollicitudin ac orci phasellus egestas.</p>
-                    <a href="#"><b>Get in touch with <br> us</b></a>
+                    <div class="overlay-text">
+                        <p>Company name</p>
+                        <h1>About Our Company</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet purus gravida quis blandit. Sollicitudin ac orci phasellus egestas.</p>
+                        <a href="#contact-us"><b>Get in touch with us</b></a>
+                    </div>
                 </article>
         </section>
         </header>
         <main>
+            <a href="#top3" id="floating-button"><i class="fa-solid fa-arrow-up"></i></a>
             <section id="flex-branding">
                 <h3>Our Services</h3>
-                <article>
-                    <i class="fa-solid fa-users"></i>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
-                </article>
-
-                <article>
-                    <i class="fa-solid fa-cloud-arrow-up"></i>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
-                </article>
-
-                <article>
-                    <i class="fas fa-code"></i>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
-                </article>
-
-                <article>
-                    <i class="fa-solid fa-wifi"></i>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
-                </article>
+                <div class="branding">
+                    <article class="brand-icon">
+                        <i class="fa-solid fa-users"></i>
+                        <h4>Branding</h4>
+                        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                    </article>
+    
+                    <article class="brand-icon">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <h4>Branding</h4>
+                        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                    </article>
+    
+                    <article class="brand-icon">
+                        <i class="fas fa-code"></i>
+                        <h4>Branding</h4>
+                        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                    </article>
+    
+                    <article class="brand-icon">
+                        <i class="fa-solid fa-wifi"></i>
+                        <h4>Branding</h4>
+                        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                    </article>
+                </div>
             </section>
 
             <section id="clients">
@@ -83,9 +89,53 @@
                     <li><img src="img/logo3.png" alt="Grå och vit logga som säger Aca"></li>
                 </ul>
             </section>
+
+            <section id="contact-us">
+                <h3>Contact us</h3>
+                <div class="flex-contact">
+                    <article id="scheme">
+                        <form method="post" action="#" autocomplete="on">
+                            <h4>Send us a message</h4>
+    
+                            <label for="name">Name</label>
+                            <input type="text" name="name" placeholder="Ola Nordmann.." id="name" required>
+    
+                            <label for="subject">Subject</label>
+                            <input type="text" name="subject" placeholder="Branding.." id="subject" required>
+    
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="7" required></textarea>
+    
+                            <input type="submit" value="Send message" id="submit">
+                        </form>
+                    </article>
+    
+                    <article id="con-info">
+                        <h4>Contact information</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet purus gravida quis blandit. Sollicitudin ac orci phasellus egestas.</p>
+                        <ul>
+                            <li><i class="fa-solid fa-location-pin"></i>B R A Veien 4, 1757 Halden</li>
+                            <li><i class="fa-solid fa-phone"></i>69 60 80 00</li>
+                            <li><i class="fa-solid fa-envelope"></i><a href="#">postmottak@hiof.no</a></li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <article>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.210573847431!2d11.349786677099187!3d59.128877174517875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0x4495a486ebe83bb4!2sB%20R%20A%20Veien%204%2C%201757%2C%201783%20Halden!5e0!3m2!1ssv!2sno!4v1701094612516!5m2!1ssv!2sno" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+            </section>
         </main>
         <footer>
-
+            <span><a href="index.html"><img id="logo" src="img/logo1.png" alt="Grå och vit logga som säger iloceam pleam"></a></span>
+            <p>Companyrights Companyname 2023</p>
+            <ul>
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
         </footer>
     </div>
 </body>

@@ -1,5 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
+    max-width: 1600px;
 }
 
 #grid-container{
@@ -15,12 +16,17 @@ header{
     grid-area: header;
 }
 
-nav span{
+header nav{
+    display: flex;
+    flex-direction: column;
+}
+
+header nav span{
     display: flex;
     justify-content: center;
 }
 
-nav ul{
+header nav ul{
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -28,12 +34,12 @@ nav ul{
     padding-left: 0;
 }
 
-nav a{
+header nav a{
     text-decoration: none;
     color: black;
 }
 
-nav ul li{
+header nav ul li{
     padding: 0.5rem;
     font-size: large;
 }
@@ -64,6 +70,10 @@ nav ul li{
     margin: auto;
 }
 
+.container video{
+    display: none;
+}
+
 .container img{
     width: 100%;
     max-height: 500px;
@@ -92,16 +102,17 @@ nav ul li{
     padding-right: 6rem;
     text-decoration: none;
     color: black;
+    margin: 0 2rem;
 }
 
 .text-overlay h1{
-    margin: 0;
+    margin: 0 5rem 1rem 5rem;
 }
 
 .text-overlay p{
     margin-bottom: 2rem;
     line-height: 1.5;
-    padding: 0 2rem 0 2rem;
+    padding: 0 3rem 0 3rem;
 }
 
 #floating-button {
@@ -115,6 +126,7 @@ nav ul li{
     color: #fff;
     border: none; 
     font-size: xx-large;
+    z-index: 1;
 }
 
 main{
@@ -125,17 +137,12 @@ main{
     text-align: center;
 }
 
-#overtext{
-    margin-bottom: 0;
-    margin-top: 3rem;
-}
-
-#undertext{
-    margin-top: 0;
+#text h2{
+    margin: 1.5rem;
 }
 
 #text p{
-    padding: 0 2rem 0 2rem;
+    padding: 0 3rem 0 3rem;
 }
 
 #flex-company{
@@ -153,7 +160,7 @@ main{
 }
 
 #flex-company h3{
-    padding: 0 4rem;
+    padding: 0 7rem 0 4rem;
 }
 
 #flex-company p{
@@ -168,18 +175,24 @@ main{
 #read-more b{
     display: inline-block;
     border: 2px solid black;
-    padding: 0.5rem 6rem 0.5rem 1rem;
-    margin-left: 4rem;
+    padding: 0.5rem 4rem 1rem 1rem;
+    margin: 0 4rem;
 }
 
-#flex-branding{
+.branding{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
+}
+
+.brand-icon{
+    flex-direction: column;
 }
 
 #flex-branding h3{
     margin-top: 3rem;
+    text-align: center;
 }
 
 #flex-branding i{
@@ -192,7 +205,7 @@ main{
 }
 
 #flex-branding article{
-    margin-top: 2rem;
+    margin: 2rem 2rem;
 }
 
 #user-reg{
@@ -228,8 +241,25 @@ main{
     text-decoration-color: #e6bd43;
 }
 
+.container-startp {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+#cactus{
+    width: 100%;
+    max-height: 500px;
+    margin-top: 1rem;
+}
+
+#cactus2{
+    display: none;
+}
+
 main h2{
-    font-size: large;
+    font-size: x-large;
+    margin-left: 2rem;
 }
 
 #explore h2{
@@ -260,78 +290,50 @@ hr{
     border: 2px solid #000000;
 }
 
-#branding{
+.container-prod{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-#branding h2{
-    align-self: flex-start;
-    margin-left: 2rem;
-    margin-bottom: 0;
+.container-prod {
+    position: relative;
+    width: 100%;
+    margin: auto;
 }
 
-#branding article{
-    max-width: 692px;
-    min-width: 200px;
-    display: flex;
-    flex-direction: column;
+.container-prod img{
+    width: 100%;
+    max-height: 500px;
+    margin-top: 1rem;
+}
+
+.box{
     flex-grow: 1;
-}
-
-#branding h3{
-    margin-bottom: 2.5rem;
-}
-
-#design{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#design h2{
-    align-self: flex-start;
-    margin-left: 2rem;
-    margin-bottom: 0;
-}
-
-#design article{
     max-width: 692px;
-    min-width: 200px;
     display: flex;
     flex-direction: column;
+}
+
+#branding img{
+    width: 85%;
+    align-self: center;
+}
+
+#design img{
+    width: 85%;
+    align-self: center;
+}
+
+#development img{
     flex-grow: 1;
+    width: 85%;
+    align-self: center;
 }
 
-#design h3{
-    margin-bottom: 2.5rem;
-}
-
-#development{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#development h2{
-    align-self: flex-start;
+article h3{
     margin-left: 2rem;
-    margin-bottom: 0;
 }
 
-#development article{
-    max-width: 692px;
-    min-width: 200px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-
-#development h3{
-    margin-bottom: 2.5rem;
-}
 
 /*about*/
 
@@ -359,7 +361,6 @@ hr{
 #text-overlay-a{
     position: absolute;
     top: 0; 
-    left: 0; 
     width: 80%;
     height: 80%;
     display: flex;
@@ -368,22 +369,19 @@ hr{
     align-items: center;
     background-color: rgba(255, 255, 255, 0.6);
     margin-left: 10%;
-    margin-top: 4rem;
+    margin-top: 3.5rem;
 }
 
 #container-a h1{
     font-size: large;
     align-self: flex-start;
     margin-left: 1rem;
+    padding-right: 9rem;
 }
 
 #text-overlay-a p{
     align-self: flex-start;
-    margin-left: 1rem;
-}
-
-#lorem{
-    margin-right: 1rem;
+    margin: 1rem;
 }
 
 #container-a a{
@@ -393,11 +391,12 @@ hr{
 #text-overlay-a a{
     background-color: #e6bd43;
     display: inline-block;
-    padding: 1rem 5rem 1rem 1rem;
+    padding: 1rem 3rem 1rem 1rem;
     text-decoration: none;
     color: black;
     align-self: flex-start;
     margin-left: 1rem;
+    margin-right: 5rem;
 }
 
 #clients{
@@ -415,14 +414,100 @@ hr{
 
 #clients img{
     max-width: 135px;
-    padding: 0.5rem;
+    padding: 1.5rem;
 }
 
 #clients h4{
-    margin-left: 1.5rem;
     font-size: large;
+    text-align: center;
 }
 
+#contact-us{
+    background-color: rgb(225, 225, 225);
+    padding: 1rem;
+}
+
+#contact-us h3{
+    text-align: center;
+    margin: 1rem;
+}
+
+.flex-contact{
+    display: flex;
+    flex-direction: column;
+}
+
+#scheme h4{
+    align-self: stretch;
+    margin: 1rem 0 0 2rem;
+}
+
+#contact-us form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-us label{
+    align-self: stretch;
+    margin: 1rem 0 1rem 2rem;
+}
+
+#name, #subject{
+    padding: 0.5rem;
+    align-self: stretch;
+    margin: 0 2rem 0 2rem;
+    border: 0;
+}
+
+#message{
+    align-self: stretch;
+    margin: 0 2rem 1rem;
+    border: 0;
+}
+
+#submit{
+    background-color: #e6bd43;
+    padding: 1rem;
+    border: 0;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-left: 2rem;
+}
+
+#con-info{
+    display: flex;
+    flex-direction: column;
+}
+
+#con-info h4{
+    align-self: stretch;
+    margin: 3rem 0 1rem 2rem;
+}
+
+#con-info p{
+    align-self: stretch;
+    margin: 0 2rem 0 2rem;
+}
+
+#con-info ul{
+    list-style: none;
+    align-self: stretch;
+    margin-left: 2rem;
+    padding: 0;
+}
+
+#con-info i{
+    font-size: x-large;
+    margin: 0.5rem 1rem 0.5rem 0;
+    color: rgb(70, 70, 70);
+}
+
+iframe{
+    width: 100%;
+    height: 250px;
+    border: 0;
+}
 
 
 footer{
@@ -458,9 +543,237 @@ footer i{
 }
 
 
+@media only screen and (min-width: 600px) {
+    #grid-container{
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
 
+    header nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+    header nav ul{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 3.5rem 1rem;
+    }
 
-@media only screen and (min-width: 600px){
+    header nav ul li{
+        margin-top: 1rem;
+    }
 
+    #logotop{
+        margin: 1rem 0 0.5rem 2rem;
+    }
+
+    #contact a:hover{
+        background-color: #000000;
+        color:#e6bd43;
+    }    
+
+    .container video{
+        display: flex;
+        width: 100%;
+    }
+
+    .container img{
+        display: none;
+    }
+
+    .text-overlay a{
+        padding-right: 1rem;
+    }
+    
+    .text-overlay a:hover{
+        background-color: #000000;
+        color: #e6bd43;
+    }
+
+    .company-text{
+        margin: 3rem;
+    }
+
+    #flex-company{
+        flex-direction: row;
+        padding: 4rem 0 4rem 0;
+    }
+
+    #flex-company img{
+        margin-left: 3rem;
+    }
+
+    #flex-company h3{
+        padding: 0;
+    }
+
+    #flex-company p{
+        padding: 0;
+    }
+
+    #read-more b{
+        margin: 0;
+    }
+
+    #read-more b:hover{
+        background-color: #000000;
+        color: #e6bd43;
+    }
+
+    #user-reg h4{
+        font-size: xx-large;
+    }
+
+    #placeholder{
+        padding: 1.5rem 1.5rem 1.5rem 0.5rem;
+    }
+
+    #button-sign{
+        padding: 1.5rem 1rem;
+    }
+
+    #button-sign:hover{
+        background-color: #000000;
+        color: #e6bd43;
+    }
+
+    #text{
+        margin-top: 3rem;
+    }
+
+    #cactus{
+        display: none;
+    }
+
+    #cactus2{
+        display: flex;
+        width: 100%;
+        max-height: 600px;
+        margin-top: 1rem;
+    }
+
+    #container-a h1{
+        font-size: x-large;
+        margin-left: 0;
+    }
+
+    #text-overlay-a a {
+        margin: 0;
+    }
+
+    #text-overlay-a a:hover{
+        background-color: #000000;
+        color: #e6bd43;
+    }
+
+    #text-overlay-a{
+        width: 50%;
+        margin-left: 45%;
+    }
+
+    #text-overlay-a p {
+        margin: 2rem 0;
+    }
+
+    .overlay-text{
+        margin-left: 2rem;
+    }
+
+    #explore li a:hover{
+        background-color: #000000;
+        color: #e6bd43;
+    }
+
+    #flex-branding h3{
+        font-size: x-large;
+    }
+
+    #branding article{
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    #branding article:hover{
+        transform: scale(1.13);
+    }
+
+    #design article{
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    #design article:hover{
+        transform: scale(1.12);
+    }
+
+    #development article{
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    #development article:hover{
+        transform: scale(1.05);
+    }
+
+    #clients h4{
+        font-size: x-large;
+    }
+
+    .flex-contact{
+        flex-direction: row;
+    }
+
+    #contact-us h3{
+        font-size: x-large;
+    }
+
+    #con-info h4{
+        margin: 1rem 0 1rem 2rem;
+    }
+
+    #scheme{
+        width: 50%;
+    }
+
+    #scheme h4 {
+        align-self: stretch;
+        margin: 1rem 0;
+    }
+    
+    #contact-us label {
+        align-self: stretch;
+        margin: 1rem 0;
+    }
+
+    #name, #subject {
+        margin: 0;
+    }
+
+    #message{
+        margin: 0 0 1rem;
+    }
+
+    #submit{
+        margin: 0;
+    }
+
+    #submit:hover{
+        background-color: #000000;
+        color: #e6bd43;
+    }
+
+    #contact-us{
+        padding: 2rem;
+    }
+
+    #con-info{
+        width: 50%;
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer img{
+        max-width: 130px;
+        margin: 0 0 2rem 1rem;
+    }
 }
