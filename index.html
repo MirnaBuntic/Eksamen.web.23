@@ -21,16 +21,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link type="image/png" sizes="32x32" rel="icon" href="img/icons8-favorite-32.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="img/logo1.png">
     <title>ILOCEAM PLEAM: To Put Your Company's Branding In Focus</title>
 </head>
 <body>
+     <!--Hjälp av https://chat.openai.com/ med tangentbordsnavigering-->
+     <!--Lorem ipsum text: https://loremipsum.io/generator/?n=7&t=p#google_vignette-->
+     <!--Alla placeholder bilder är ifrån: https://placehold.co/-->
     <div id="grid-container">
         <header id="top1">
             <nav>
                 <!--Detta är en bild med funktion som gör att man kommer till startsidan om man trycker på den-->
                 <span><a href="index.html"><img id="logotop" src="img/logo1.png" alt="A gray and white logo that says iloceam pleam" aria-label="Go to the home page"></a></span>
-                
                 <section>
                     <ul role="menu">
                         <li role="menuitem" id="home"><a href="index.html" aria-current="page" aria-label="Go to the home page"><b>Home</b></a></li>
@@ -40,11 +42,13 @@
                     </ul>
                 </section>
             </nav>
+            <!--Hjälp med container av https://chat.openai.com/-->
             <section class="container">
                 <!--Denna video/bild är pynt-->
-                    <img src="img/pc-cactus.jpg" alt="" aria-hidden="true">
+                <!--https://pixabay.com/sv/photos/b%C3%A4rbar-dator-%C3%A4pple-tangentbord-2588938/ jag har redigerat bilden genom att bara trycka på redigera efter att jag laddat ner den till dator, inget externt program.-->
+                    <img src="img/pc-cactus.jpg" alt="A black and white photo of a computer and a cactus." aria-hidden="true">
                     <video aria-hidden="true" autoplay muted loop>
-                        <source src="img/mountains.mp4" type="video/mp4" alt="">
+                        <source src="img/mountains.mp4" type="video/mp4">
                     </video>
                     <article class="text-overlay">
                         <h1 tabindex="1">Compeling headline</h1>
@@ -62,17 +66,25 @@
                 <p tabindex="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor. </p>
             </section>
 
-            <section id="flex-company">
+           <!--Hjälp av https://developers.google.com/search/docs/appearance/structured-data/image-license-metadata-->
+            <section itemscope itemtype="https://schema.org/ImageObject" id="flex-company">
                 <!--Lite svårt att säga om det är innehåll eller pynt eftersom jag inte vet vad bilden ska visa eller vad texten säger, men jag tänker att det är innehåll i detta kontext-->
-                <img src="https://placehold.co/400" alt="Gray placeholder picture 400x400px" >
+                <img itemprop="contentUrl" src="https://placehold.co/400" alt="Gray placeholder picture 400x400px" >
+                <span itemprop="license" content="https://example.com/license"></span>
+                <span itemprop="acquireLicensePage" content="https://example.com/how-to-use-my-images"></span>
+                <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
+                  <meta itemprop="name" content="Mirna Buntic" />
+                </span>
+                
+                <span itemprop="copyrightNotice" content="Companyrights Companyname 2023"></span>
                 <div class="company-text">
-                <h3 tabindex="1">About Our Company</h3>
-                <p tabindex="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum non consectetur a erat nam. Cras tincidunt lobortis feugiat vivamus at augue eget arcu.</p>
-                <a tabindex="3" href="about.html" id="read-more"><b>Read more about us</b></a>
+                     <h3 tabindex="1">About Our Company</h3>
+                     <p tabindex="2" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum non consectetur a erat nam. Cras tincidunt lobortis feugiat vivamus at augue eget arcu.</p>
+                     <a tabindex="3" href="about.html" id="read-more"><b>Read more about us</b></a>
                 </div>
             </section>
 
-
+            <!--Hjälp med br-taggen https://www.w3schools.com/tags/tag_br.asp-->
             <section id="flex-branding">
                 <h3 tabindex="1">Our Services</h3>
                 <!--Ikonerna är pynt-->
@@ -115,6 +127,7 @@
             <!--Bilden är innehåll-->
             <span><a href="index.html"><img id="logo" src="img/logo1.png" alt="A gray and white logo that says iloceam pleam" aria-label="Go to the home page"></a></span>
             <p>Companyrights Companyname 2023</p>
+            <!--Ikonerna har innehåll-->
             <ul>
                 <li><a href="https://www.facebook.com/" aria-label="Go to our Facebook page"><i class="fa-brands fa-square-facebook"></i></a></li>
                 <li><a href="https://www.instagram.com/" aria-label="Go to our Instagram page"><i class="fa-brands fa-instagram"></i></a></li>

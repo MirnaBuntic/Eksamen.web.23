@@ -17,11 +17,18 @@
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link type="image/png" sizes="32x32" rel="icon" href="img/icons8-favorite-32.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="img/logo1.png">
     <title>ILOCEAM PLEAM: A Portfolio Full Of Design, Branding and Development</title>
 </head>
+  
 <body>
+     <!--Hjälp av https://chat.openai.com/ med tangentbordsnavigering-->
+     <!--Lorem ipsum text: https://loremipsum.io/generator/?n=7&t=p#google_vignette-->
+     <!--Alla placeholder bilder är ifrån: https://placehold.co/-->
     <div id="grid-container">
         <header id="top2">
             <nav>
@@ -36,8 +43,10 @@
                     </ul>
                 </section>
             </nav>
+            <!--Hjälp med container av https://chat.openai.com/-->
             <section class="container-startp">
                 <!--Bilderna är pynt-->
+                <!--https://pixabay.com/sv/photos/b%C3%A4rbar-dator-%C3%A4pple-tangentbord-2588938/ jag har redigerat bilden genom att bara trycka på redigera efter att jag laddat ner den till dator, inget externt program.-->
                     <img id="cactus" src="img/pc-cactus.jpg" alt="A black and white photo of a computer and a cactus." aria-hidden="true">
                     <img id="cactus2" src="img/pc-cactus-inzoomad.jpg" alt="A black and white photo of a computer and a cactus." aria-hidden="true">
                     <article class="text-overlay">
@@ -51,6 +60,7 @@
             <!--Denna ikon har en funktion att fungera som en knapp-->
             <a href="#top2" role="button" id="floating-button" aria-label="Go to the top of the page" accesskey="t"><i class="fa-solid fa-arrow-up" ></i></a>
 
+            <!--Hjälp med itemprop:category av https://schema.org/Product-->
             <article id="explore">
                 <h2 tabindex="1">Explore previous jobs</h2>
                 <hr aria-hidden="true">
@@ -66,11 +76,9 @@
                 <h2 tabindex="1" itemprop="category">Branding</h2>
                 <hr aria-hidden="true">
                 <div class="container-prod">
-                    <div>
-                        <article class="box">
-                            <img tabindex="1" src="https://placehold.co/400" alt="Gray placeholder picture 400x400px" itemprop="image">
-                            <h3 tabindex="2" itemprop="name">Et harum quidem</h3>
-                        </article>
+                    <article class="box">
+                        <img tabindex="1" src="https://placehold.co/400" alt="Gray placeholder picture 400x400px" itemprop="image">
+                        <h3 tabindex="2" itemprop="name">Et harum quidem</h3>
                         <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
                             <meta itemprop="reviewCount" content="50">
                             <meta itemprop="ratingValue" content="4.8">
@@ -81,7 +89,7 @@
                             <meta itemprop="availability" content="https://schema.org/InStock"/>
                             <meta itemprop="priceValidUntil" content="2024-01-01"/>
                         </div>
-                    </div>
+                    </article>
                     <article class="box">
                         <img tabindex="3" src="https://placehold.co/400" alt="Gray placeholder picture 400x400px" itemprop="image">
                         <h3 tabindex="4" itemprop="name">Et harum quidem</h3>
@@ -135,6 +143,7 @@
             <!--Bilden är innehåll-->
             <span><a href="index.html"><img id="logo" src="img/logo1.png" alt="A gray and white logo that says iloceam pleam" aria-label="Go to the home page"></a></span>
             <p>Companyrights Companyname 2023</p>
+            <!--Ikonerna har innehåll-->
             <ul>
                 <li><a href="https://www.facebook.com/" aria-label="Go to our Facebook page"><i class="fa-brands fa-square-facebook"></i></a></li>
                 <li><a href="https://www.instagram.com/" aria-label="Go to our Instagram page"><i class="fa-brands fa-instagram"></i></a></li>
