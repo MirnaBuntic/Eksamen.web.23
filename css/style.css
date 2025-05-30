@@ -1,6 +1,5 @@
 body{
     font-family: 'Roboto', sans-serif;
-    max-width: 1600px;
 }
 
 #grid-container{
@@ -41,7 +40,7 @@ header nav a{
 
 header nav ul li{
     padding: 0.5rem;
-    font-size: large;
+    font-size: xxx-large;
 }
 
 #logotop{
